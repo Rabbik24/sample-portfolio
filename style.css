@@ -1,0 +1,336 @@
+* {
+    margin: 50;
+    padding: 50;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1a1919; /* Light Gray */
+    color: #2c3e50; /* Dark Slate Gray */
+}
+
+header {
+    background: #010101d8; /* Dark Slate Gray */
+    color: #ecf0f1; /* Light Gray */
+    padding: 20px 0;
+    text-align: center;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 10px 6px rgb(0, 227, 204);
+    transition: background 0.5s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1; /* Light Gray */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #34495e; /* Slightly lighter dark gray */
+}
+
+nav ul li a.active {
+    background: #e67e22; /* Orange for active link */
+}
+
+#hero {
+    background: linear-gradient(to right, #ff02ff, #06ddedf9); /* Blue to Green */
+    color: #ecf0f1; /* Light Gray */
+    padding: 20px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+/* Profile Image Styles */
+.profile-img {
+    width: 300px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin: 20px 0;
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s forwards; /* Fade in effect */
+    animation-delay: 0.5s; /* Delay for the fade-in effect */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    animation: slideInLeft 1.5s ease-out;
+    text-align: center;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#hero p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#hero .btn {
+    background: #e67e22; /* Orange */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+#hero .btn:hover {
+    background: #000000; /* Darker Orange */
+    transform: scale(1.05);
+}
+
+section {
+    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 1500px;
+    text-align: center;
+    background: #fff; /* White */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+    opacity: 0;
+    transition: opacity 0.s ease-in-out;
+}
+
+section.show {
+    opacity: 1;
+}
+
+
+#about {
+    background: #2980b9; /* Blue */
+    color: #fff;
+}
+
+#hero .btn, .btn {
+    background: #e67e22; /* Orange */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Added box-shadow */
+}
+
+#hero .btn:hover, .btn:hover {
+    background: #d35400; /* Darker Orange */
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+/* Add this to your CSS for responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0; /* Add space between items */
+    }
+
+    #hero h1 {
+        font-size: 2rem; /* Reduce font size */
+    }
+
+    #hero p {
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    section {
+        padding: 30px 10px; /* Reduce padding */
+    }
+}
+
+#skills{
+  background-color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  color:whitesmoke
+}
+
+#projects{
+background-color: #000;
+font-family: 'Times New Roman', Times, serif;
+color: whitesmoke;
+}
+
+#education{
+  background-color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+}
+
+#internship{
+  background-color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+}
+
+#certifications{
+  background-color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+}
+
+#resume{
+  background-color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+}
+
+#contact{
+  background-color: #000;
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+}
+
+
+
+
+
+
+
+/* Neon Background Layer */
+.neon-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.7), rgba(0, 230, 255, 0.7), rgba(255, 255, 0, 0.7), rgba(0, 0, 255, 0.7));
+    background-size: 200% 200%;
+    animation: neonFlow 8s linear infinite, glowPulse 3s ease-in-out infinite alternate;
+    filter: blur(30px);
+    opacity: 0.85;
+    z-index: -1; /* Keeps it behind the main content */
+  }
+  
+  /* Neon Animation Keyframes */
+  @keyframes neonFlow {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  @keyframes glowPulse {
+    0% {
+      filter: blur(20px);
+      opacity: 0.8;
+    }
+    100% {
+      filter: blur(40px);
+      opacity: 1;
+    }
+  }
+  
+  /* Main Content Positioning */
+  .content {
+    position: relative;
+    z-index: 1; /* Ensures main content stays above the background */
+  }
+  
+
+footer {
+    background: #2c3e50; /* Dark Slate Gray */
+    color: #ecf0f1; /* Light Gray */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* Basic styling for the button */
+#getInTouchBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close Button */
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #000;
+  }
+  
+  /* Form Styling */
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  

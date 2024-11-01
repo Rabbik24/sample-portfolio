@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mohamed Rabbik, aspiring IT professional and web developer.">
+    <title>Mohamed Rabbik - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="neon-background"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="profile.jpg" alt="Mohamed Rabbik" class="profile-img">
+        <h1>Hello, I'm Mohamed Rabbik</h1>
+        <p>Aspiring IT Professional & Web Developer</p>
+        <br>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="about">
+        <h2><u>ABOUT ME</u></h2>
+        <p>Results-oriented and highly motivated recent graduate with a Bachelor's degree in <b>Computer Applications</b>,
+            offering a strong foundation in <b>web development</b>. Adept at developing robust, scalable, and efficient backend
+            systems using <b>Python</b>, with a keen ability to integrate these with modern web technologies like <b>HTML, CSS, and
+            JavaScript</b>. Seeking an entry-level web developer position to leverage my web development skills to create
+            innovative and high-performing web applications. Passionate about continuous learning, problem-solving, and
+            contributing to a dynamic and collaborative team environment.</p>
+    </section>
+
+    <section id="skills">
+        <h2><u>SKILLS</u></h2>
+        <ul>
+            <li>Front-end Technologies: HTML, CSS, JavaScript</li>
+            <li>Back-end Technologies: Python</li>
+            <li>Database Management Systems: SQL</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2><u>PROJECTS</u></h2>
+        <div class="project">
+            <h3>NLP-based Resume Screening System</h3>
+            <p><b>Description:</b> Developed a system to automate candidate evaluation by leveraging NLP to extract key resume features such as skills and qualifications. Applied machine learning algorithms for accurate candidate matching.</p>
+            <p><b>Technologies Used:</b> Python (back-end), HTML and CSS (frontend), Streamlit framework for deployment.</p>
+            <p><b>Impact:</b> Enhanced screening efficiency and accuracy, reduced manual effort, and minimized bias.</p>
+        </div>
+        <div class="project">
+            <h3>Email Spam Detection System Using NLP</h3>
+            <p><b>Description:</b> Developed a system for detecting email spam using Python and NLP techniques. Implemented text preprocessing (tokenization, stop words removal, stemming) and feature extraction (TF-IDF, word embeddings). Trained machine learning classifiers (Naive Bayes, SVM) for email classification.</p>
+            <p><b>Technologies Used:</b> Python (back-end), HTML and CSS (frontend), XTREAMLIT framework on Windows OS.</p>
+            <p><b>Impact:</b> Improved email classification accuracy and provided a user-friendly interface for managing spam detection.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2><u>EDUCATION</u></h2>
+        <p><strong>Bachelor's Degree in Computer Applications (BCA)</strong><br>2021 – 2024<br>CGPA: 81.47%</p>
+        <h2>INTERMEDIATE</h2>
+        <p><strong>Chooshal Chand hr sec School</strong><br>2020 – 2021<br>Percentage - 71%</p>
+    </section>
+
+    <section id="internship">
+        <h2><u>INTERNSHIP</u></h2>
+        <p><strong>Full Stack Developer Intern at Qriocity Ventures Private Limited</strong><br>Jan 1 - Apr 1, 2024<br>Led development of full-stack web applications, providing technical mentorship and ensuring timely project delivery. Designed responsive UIs with HTML, CSS, and JavaScript, improving user experience. Implemented backend logic with Python, integrated APIs, and optimized performance.</p>
+    </section>
+
+    <section id="certifications">
+        <h2><u>CERTIFICATIONS</u></h2>
+        <ul>
+            <li>Data Science Course for Beginners - (NASSCOM Foundation)</li>
+            <li>Microsoft Advanced Level Certificate - (Focus Areas: Word, Excel, PowerPoint)</li>
+            <li>Diploma in Python - (Annamalai University)</li>
+        </ul>
+    </section>
+   
+    <section id="resume">
+        <h2><u>RESUME</u></h2>
+        <p>Click the button below to view or download my resume:</p>
+        <a href="rabbik-resume.pdf" target="_blank" class="btn">View Resume</a>
+    </section>
+    
+
+    <section id="contact">
+        <h2><u>CONTACT</u></h2>
+        <p>Email: <a href="mailto:developer.rabbik@gmail.com">developer.rabbik@gmail.com</a></p>
+        <p>Phone: +91 7695959281</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-rabbik-m/" target="_blank">Mohamed Rabbik</a></p>
+    </section>
+
+<center>
+    <!-- "Get in Touch" Button -->
+<button id="getInTouchBtn">Get in Touch</button>
+</center>
+<!-- Contact Form Modal -->
+<div id="contactFormModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+    <footer>
+        <p>&copy; 2024 Mohamed Rabbik. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
